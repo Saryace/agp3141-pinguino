@@ -27,7 +27,7 @@ uno_al_diez_df <- tibble(datos = 1:10,
 uno_al_diez_df <- tibble(datos = 1:10,
                          tipo = rep(c("a","b"), each = 5))
 
-rep(c("a","b"), times = 1, each = 5) # equivalente
+rep(c("a","b"), times = 4, each = 5) # equivalente
 
 # Repaso: tibbles son rectangulares ---------------------------------------
 
@@ -150,7 +150,7 @@ for(numero in 1:120) {
 
 # No solo funciones con numeros -------------------------------------------
 
-nombres_clase <- c("Manuel", "Margarita", "Macarena")
+nombres_clase <- c("Luis", "Mariana", "Danurys", "Rosalia")
 
 for(nombre in nombres_clase) {
   print(nombre)
@@ -197,15 +197,15 @@ saludo_animal <-
 
 # Funciona o no funciona? -------------------------------------------------
 
-saludo_animal(nombre = "Blanca",
-              animal = "grumpycat")
+saludo_animal(nombre = "Mariana",
+              animal = "anxiouscat")
 
 saludo_animal(nombre = "Blanca",
               animal = c("grumpycat", "longcat"))
 
 # Iteramos ----------------------------------------------------------------
 
-nombres_clase <- c("Manuel", "Margarita", "Macarena")
+nombres_clase <- c("Luis", "Mariana", "Danurys", "Rosalia", "Miguel")
 
 animales <- c("ant", "longcat")
 
