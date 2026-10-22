@@ -91,7 +91,7 @@ pinguino_largo_simple
 # Ahora sí podemos ensanchar ----------------------------------------------
 
 pinguino_largo_simple %>%
-  pivot_wider(names_from = name,
+  pivot_wider(names_from = isla,
               values_from = value)
 
 # 3. ¿PARA QUÉ SIRVE CADA FORMATO? =========================================
@@ -145,7 +145,7 @@ especies_info
 
 pinguinos %>%
   left_join(especies_info,
-            by = c("especie" = "nombre_comun"))
+            by = c("especie" = "nombre_comun")) |> View()
 
 # sintaxis nueva de dplyr (equivalente)
 
