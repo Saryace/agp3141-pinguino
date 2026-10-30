@@ -1,6 +1,6 @@
 # Librerias ---------------------------------------------------------------
 
-# install.packages("datawizard")
+# install.packages("datawizard") # instalar
 library(tidyverse)
 library(datos)
 library(datawizard)
